@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!---First, we need to add the React library as two script tags to the head of our HTML document:-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!---Next, we need to add another script, to enable the use of JSX.
+    JSX is a syntax extension to JavaScript, and it is recommended to be used with React.-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!--Now, it's time for our first React code!
+    Let's display a simple message as a heading:-->
+    <script type="text/babel">
+        ReactDOM.render(
+            <h1>Hello, React! </h1>,
+            document.getElementById('container')
+        )
+    </script>
+</head>
+<body>
+    <!--We add a container, that will be used to display something using React.-->
+    <div id="container"></div>
+</body>
+</html>
