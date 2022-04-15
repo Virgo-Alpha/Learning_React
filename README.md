@@ -88,3 +88,19 @@ ReactDOM.render(
 );
     =====================================
 
+<h3>Class Components</h3>
+Class components are typically used when there are more advanced user interactions, like forms, and animations.
+
+All class components need to extend the React.Component class.
+
+We can rewrite our Hello functional component as a class component:
+
+    =====================================
+class Hello extends React.Component {
+  render() {
+    return `<h1>Hello world.</h1>;`
+  }
+}
+    ======================================
+
+Class components need to have a render method, which is in charge of telling what the page should show.
