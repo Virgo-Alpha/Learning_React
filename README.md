@@ -1,6 +1,29 @@
 # Learning_React
 Intro to React
 
+## To make a react project:
+npx create-react-app my-app
+cd my-app
+npm start
+
+Then Delete all files in the src/ folder of the new project
+cd my-app
+cd src
+
+### If you're using a Mac or Linux:
+rm -f *
+
+### Or, if you're on Windows:
+del *
+
+Add a file named index.css in the src/ folder
+Add a file named index.js in the src/ folder
+Add these three lines to the top of index.js in the src/ folder:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 The public folder contains files related to how the application will display on the client, the most important of those being index.html, which is the HTML template of our page
 
 The src folder contains all of the JavaScript, CSS, and image files that will be compiled into a bundle file and injected into index.html:
@@ -98,6 +121,9 @@ ReactDOM.render(<br>
 Class components are typically used when there are more advanced user interactions, like forms, and animations.
 
 All class components need to extend the React.Component class.
+
+Note:
+In JavaScript classes, you need to always call super when defining the constructor of a subclass. All React component classes that have a constructor should start with a super(props) call.
 
 We can rewrite our Hello functional component as a class component:
 
